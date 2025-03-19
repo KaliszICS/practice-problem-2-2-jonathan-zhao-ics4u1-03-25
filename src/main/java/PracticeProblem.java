@@ -47,20 +47,18 @@ public class PracticeProblem {
 			s = arr.length;
 		}
 		}
-		int low =0;
-		int high = arr.length-1;
+		int low = 0;
+		int high = arr.length - 1;
 		int mid;
-		while (low<=high){
-			mid = (low+high)/2;
+		while (low <= high){
+			mid = (low+high) / 2;
 			counterBin++;
 			if (str == arr[mid]){
-				low = high+1;
-			}
-			else if (str.compareTo(arr[mid])>0){
-				low = mid+1;
-			}
-			else{
-				high = mid-1;
+				low = high + 1;
+			} else if (str.compareTo(arr[mid]) > 0){
+				low = mid + 1;
+			} else {
+				high = mid - 1;
 			}
 		}
 		
@@ -69,4 +67,5 @@ public class PracticeProblem {
 		return count;
 		}
 	}
+
 
